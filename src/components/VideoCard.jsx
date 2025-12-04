@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 function VideoCard() {
     const allVideos = useSelector((store)=>store.app.videos);
-    // const allVideos= tempData    
-    console.log(allVideos)    
+    // const allVideos= tempData        
   return (
     <div className='flex flex-wrap '>        
         {allVideos && allVideos.map((item)=>{    
