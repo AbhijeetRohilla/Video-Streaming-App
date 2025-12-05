@@ -8,7 +8,7 @@ const liveSlice=createSlice({
         ]
     },
     reducers:{
-        addRandomName:(state,action)=>{  
+        addRandomName:(state,action)=>{              
             state.messages.splice(10,1)          
             state.messages.unshift(action.payload);
         }
