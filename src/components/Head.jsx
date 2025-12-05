@@ -18,7 +18,7 @@ function Head() {
     //Debouncing....
     const debouncedVal = setTimeout(() => {
       fetchSearchApi();
-    }, 200)
+    }, 2000)
     //Clearing Timeout or declining immediate calls
     return () => {
       clearInterval(debouncedVal)
